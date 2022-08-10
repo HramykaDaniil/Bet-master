@@ -145,7 +145,6 @@ class SubscriptionViewController: UIViewController {
         
     }()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -201,7 +200,5 @@ class SubscriptionViewController: UIViewController {
         let subscribtionScreenViewController: SubscriptionScreenViewController = SubscriptionScreenViewController()
         present(subscribtionScreenViewController, animated: true, completion: nil)
     }
-    
-    
 
 }

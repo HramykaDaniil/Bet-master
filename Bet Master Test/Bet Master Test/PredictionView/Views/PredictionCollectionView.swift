@@ -88,5 +88,4 @@ class PredictionCollectionView: UICollectionView, UICollectionViewDelegate, UICo
         fatalError("init(coder:) has not been implemented")
     }
     
-
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PredictionViewController: UIViewController {
+class PredictionViewController: UIViewController, UICollectionViewDelegate{
     
     lazy var predictionCollectionView = PredictionCollectionView()
     
@@ -31,6 +31,7 @@ class PredictionViewController: UIViewController {
         predictionCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
         predictionCollectionView.set(cells: Match.setup())
+    
     }
     
     private func setNavigationControllerApearance() {
@@ -57,5 +58,14 @@ class PredictionViewController: UIViewController {
         )
         
     }
-
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SubscribeCell, for: <#T##IndexPath#>)
+    }
+    
+    
+    @objc func showSubscriptionViewController() {
+        let subscribtionScreenViewController: SubscriptionScreenViewController = SubscriptionScreenViewController()
+        present(subscribtionScreenViewController, animated: true, completion: nil)
+    }
 }

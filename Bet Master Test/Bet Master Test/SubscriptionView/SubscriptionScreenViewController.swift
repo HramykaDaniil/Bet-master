@@ -154,22 +154,6 @@ class SubscriptionScreenViewController: UIViewController {
         return button
     }()
     
-    /*
-     let subscribeButton: UIButton = {
-         let button = UIButton()
-         
-         button.setTitle("Subscribe", for: .normal)
-         button.setTitleColor(UIColor.niceWhite, for: .normal)
-         button.backgroundColor = .systemRed
-         button.layer.cornerRadius = 10
-         button.translatesAutoresizingMaskIntoConstraints = false
-         
-         button.addTarget(self, action: #selector(showSubscriptionViewController), for: .touchUpInside)
-         
-         return button
-     }()
-     */
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -181,6 +165,8 @@ class SubscriptionScreenViewController: UIViewController {
         view.addSubview(subscriptionWithDescriptionButtonView)
         view.addSubview(privacyPolicyButton)
         view.addSubview(usagePolicyButton)
+        
+        closeButton.addTarget(self, action: #selector(dismissView(sender:)), for: .touchUpInside)
         
         mainImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         mainImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 40).isActive = true
@@ -207,5 +193,8 @@ class SubscriptionScreenViewController: UIViewController {
         usagePolicyButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 50).isActive = true
     }
     
-
+    @objc func dismissView(sender: UIButton!) {
+        dismiss(animated: true)
+    }
+    
 }

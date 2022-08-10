@@ -51,6 +51,7 @@ class SubscribeCell: UICollectionViewCell {
         return button
     }()
     
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -84,6 +85,5 @@ class SubscribeCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
     
 }
