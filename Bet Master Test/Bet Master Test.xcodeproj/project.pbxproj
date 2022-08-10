@@ -17,7 +17,6 @@
 		049C0D3E289976E9002962A6 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C0D3D289976E9002962A6 /* SubscriptionViewController.swift */; };
 		049C0D4228998925002962A6 /* UIColorExtansion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C0D4128998924002962A6 /* UIColorExtansion.swift */; };
 		049C0D48289A82BF002962A6 /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C0D47289A82BF002962A6 /* MatchCell.swift */; };
-		049C0D4A289AD8DE002962A6 /* PredictionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C0D49289AD8DD002962A6 /* PredictionCollectionView.swift */; };
 		049C0D4C289BF145002962A6 /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C0D4B289BF145002962A6 /* MatchModel.swift */; };
 		04C599F528A27FFC0068FC56 /* SubscriptionScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C599F428A27FFA0068FC56 /* SubscriptionScreenViewController.swift */; };
 /* End PBXBuildFile section */
@@ -35,7 +34,6 @@
 		049C0D3D289976E9002962A6 /* SubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
 		049C0D4128998924002962A6 /* UIColorExtansion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtansion.swift; sourceTree = "<group>"; };
 		049C0D47289A82BF002962A6 /* MatchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
-		049C0D49289AD8DD002962A6 /* PredictionCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionCollectionView.swift; sourceTree = "<group>"; };
 		049C0D4B289BF145002962A6 /* MatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchModel.swift; sourceTree = "<group>"; };
 		04C599F428A27FFA0068FC56 /* SubscriptionScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				049C0D3B289976CA002962A6 /* PredictionViewController.swift */,
-				049C0D49289AD8DD002962A6 /* PredictionCollectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,7 +204,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				049C0D24289974AF002962A6 /* AppDelegate.swift in Sources */,
-				049C0D4A289AD8DE002962A6 /* PredictionCollectionView.swift in Sources */,
 				049C0D4228998925002962A6 /* UIColorExtansion.swift in Sources */,
 				049C0D3E289976E9002962A6 /* SubscriptionViewController.swift in Sources */,
 				049C0D3C289976CB002962A6 /* PredictionViewController.swift in Sources */,
